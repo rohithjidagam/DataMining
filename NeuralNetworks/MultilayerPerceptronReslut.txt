@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     HomeWork2
+Instances:    400
+Attributes:   3
+              x
+              y
+              class
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -5.179742012023755
+    Node 2    12.16973174632443
+    Node 3    -10.61943253243631
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    5.179807557605664
+    Node 2    -12.169862987711548
+    Node 3    10.61951880731662
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    9.280582111767309
+    Attrib x    12.627009087418122
+    Attrib y    14.520859565244379
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -3.944550840685501
+    Attrib x    10.428529318166197
+    Attrib y    11.060168256721932
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+Time taken to build model: 0.88 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances         394               98.5    %
+Incorrectly Classified Instances         6                1.5    %
+Kappa statistic                          0.97  
+Mean absolute error                      0.0291
+Root mean squared error                  0.1084
+Relative absolute error                  5.8198 %
+Root relative squared error             21.6891 %
+Total Number of Instances              400     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.98      0.01       0.99      0.98      0.985      0.999    0
+                 0.99      0.02       0.98      0.99      0.985      0.999    1
+Weighted Avg.    0.985     0.015      0.985     0.985     0.985      0.999
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 196   4 |   a = 0
+   2 198 |   b = 1
+
